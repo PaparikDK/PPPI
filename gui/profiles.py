@@ -7,7 +7,7 @@ class Order:
         self.payment = payment
 
 def generate_order():
-    cargo_types = ['фрукты', 'стройматериалы', 'техника', 'нефть']
+    cargo_types = ['фрукты', 'стройматериалы', 'техника', 'нефть', 'газ', 'водород']
     distance = random.randint(50, 1000)                                 # расстояние от 50 до 1000 км
     payment = distance * random.uniform(0.5, 2.0)                       # оплата зависит от расстояния
     cargo_type = random.choice(cargo_types)
